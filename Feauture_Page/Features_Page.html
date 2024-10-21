@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      FoodFind | Home
-    </title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
-  </head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>FoodFind | Home</title>
+
+      <header class="header">
+      <div class="container">
+        <h1 class="title">Bienvenue sur FoodFind</h1>
+      </div>
+    </header>
 
   <body>
     <!--Navigation bar AKA top of page-->
-    <div style="display: flex; justify-content: space-between;">
-      <h1 style="margin: 0;">FoodFind</h1>
-      <nav>
-          <a href="#">Pricing</a> |
-          <a href="FeaturesIndex.html">Home</a> |
-          <a href="#">Team</a> |
-          <button type="button">Language</button>
-          <a href="#">Login</a> |
-          <a href="#">Sign up</a>
-      </nav>
-  </div>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#">FoodFind</a></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="language">Language</a></li>
+          <button><a href="#">LogIn</a></button>
+          <button><a href="#">SignUp</a></button>
+        </ul>
+      </div>
+    </nav>
 
-  <!--Search bar-->  
-  <p style="text-align: right;"><input type="text"></p>
-  <h2>Bienvenue sur FoodFind</h2>
+    <!--Search bar-->
+    <p style="text-align: right"><input type="text" /></p>
+    <h2>Bienvenue sur FoodFind</h2>
 
-  <!--The features-->
-  <table width="100%">
-    <tr>
-      <!--This is column 1-->
+    <!--The features-->
+    <table width="100%">
+      <tr>
+        <!--This is column 1-->
         <td>
           <h3>FoodFind</h3>
           Text explaining the feature
@@ -42,34 +43,36 @@
             <li>point 1</li>
             <li>point 2</li>
             <li>point 3</li>
-            <img src=https://media.istockphoto.com/id/1412621642/vector/customer-feedback-user-experience-or-client-satisfaction-opinion-for-product-and-services.jpg?s=612x612&w=0&k=20&c=5FJpkXmxYj3S6dhEn65cab_v876zSHmVT-0Ba-SH97k=
-            width="150" 
-            height="100">
+            <img
+            src=https://media.istockphoto.com/id/1412621642/vector/customer-feedback-user-experience-or-client-satisfaction-opinion-for-product-and-services.jpg?s=612x612&w=0&k=20&c=5FJpkXmxYj3S6dhEn65cab_v876zSHmVT-0Ba-SH97k=
+            width="150" height="100">
           </ul>
-          
         </td>
-      <!--This is column 2-->
+        <!--This is column 2-->
         <td>
           <h3>Grocery List</h3>
           Text explaining the feature
           <ul>
-            <li>Milk 
-              <img src="https://assets.shop.loblaws.ca/products/20773913/b1/en/side/20773913_side_a01_@2.png"
-              width="50" 
-              height="50">
+            <li>
+              Milk
+              <img
+                src="https://assets.shop.loblaws.ca/products/20773913/b1/en/side/20773913_side_a01_@2.png"
+                width="50"
+                height="50"
+              />
             </li>
-            <li>Tea
-              <img src=https://www.foodandwine.com/thmb/6wTm7a0y87X97LK-ZMxe2787kI8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/different-types-of-tea-FT-BLOG0621-7c7fd231e66d4fea8ca9a47cad52ba79.jpg
-              width="45" 
-              height="30">
+            <li>
+              Tea <img
+              src=https://www.foodandwine.com/thmb/6wTm7a0y87X97LK-ZMxe2787kI8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/different-types-of-tea-FT-BLOG0621-7c7fd231e66d4fea8ca9a47cad52ba79.jpg
+              width="45" height="30">
             </li>
             <li>Honey</li>
-            <img src=https://images.immediate.co.uk/production/volatile/sites/30/2024/03/Honey440-bb52330.jpg?quality=90&resize=440,400
-              width="50" 
-              height="50">
+            <img
+            src=https://images.immediate.co.uk/production/volatile/sites/30/2024/03/Honey440-bb52330.jpg?quality=90&resize=440,400
+            width="50" height="50">
           </ul>
         </td>
-      <!--This is column 3-->
+        <!--This is column 3-->
         <td>
           <h3>Deliveries</h3>
           Text explaining the feature
@@ -78,23 +81,19 @@
             <li>point 2</li>
             <li>point 3</li>
           </ul>
-          <img src=https://as2.ftcdn.net/v2/jpg/02/41/39/93/1000_F_241399352_evAfgxklI47cm5zxbOSukEOQ5gayjkkE.jpg
-          width="150" 
-          height="150">
+          <img
+          src=https://as2.ftcdn.net/v2/jpg/02/41/39/93/1000_F_241399352_evAfgxklI47cm5zxbOSukEOQ5gayjkkE.jpg
+          width="150" height="150">
         </td>
-      <!--This is column 4-->
+        <!--This is column 4-->
         <td>
           <h3>Rating</h3>
-          Text explaining the feature
-          <img src=https://t3.ftcdn.net/jpg/01/64/65/46/360_F_164654600_JJ7D1mPKQCu7hi1VyaN765CNxZEwWsef.jpg
-            width="150" 
-            height="50">
-          <div>
-            Recommended
-          </div>
+          Text explaining the feature <img
+          src=https://t3.ftcdn.net/jpg/01/64/65/46/360_F_164654600_JJ7D1mPKQCu7hi1VyaN765CNxZEwWsef.jpg
+          width="150" height="50">
+          <div>Recommended</div>
         </td>
-    </tr>
-</table>
-
+      </tr>
+    </table>
   </body>
 </html>
