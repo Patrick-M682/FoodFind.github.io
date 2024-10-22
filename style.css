@@ -1,4 +1,11 @@
 body {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    background-color: rgb(183, 230, 173);
+  }
+=======
+>>>>>>> Stashed changes
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -115,4 +122,9 @@ li a:hover {
   
   .title {
     color: white;
+<<<<<<< Updated upstream
   }
+=======
+  }
+>>>>>>> 883ef76b19d71f44d87ba80bc5ef18180c1ec16b
+>>>>>>> Stashed changes
