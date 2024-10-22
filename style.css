@@ -1,15 +1,11 @@
 body {
     background-color: rgb(183, 230, 173);
+    font-family: 'Roboto', sans-serif;
+
   }
 
   .header {
-    background-color: #c94613;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  .header {
-    background-color: #c94613;
+    background-color: #4dc0b0;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -23,12 +19,16 @@ body {
     text-decoration: none;
 }
 
-.navbar {
-    background: rgb(131, 199, 142);
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgb(77, 155, 90);
     font-family: calibri;
     padding-right: 15px;
     padding-left: 15px;
 }
+
 
 .navdiv {
     display: flex;
@@ -46,12 +46,11 @@ li {
     list-style: none;
     display: inline-block;
 }
-
 li a {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
 }
 
 /* Buttons styling */
@@ -72,16 +71,22 @@ button a {
     text-align: center;
 }
 
+button, li a {
+  transition: all 0.3s ease;
+}
+
 /* Hover effect for buttons */
 button:hover {
     background-color: transparent; /* Make background transparent */
     border: 2px solid white; /* White border on hover */
+    transform: translateY(-2px); 
 }
 
 /* Links hover effect */
 li a:hover {
     color: white;
     border-bottom: 2px solid white; /* Underline the text with a rectangle on hover */
+    transform: translateY(-2px); 
 }
   .main-content {
     padding: 20px;
@@ -95,28 +100,10 @@ li a:hover {
   p {
     line-height: 1.6;
   }
-  .team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .team-member {
-    flex: 0 1 30%;
-    margin: 10px;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .team-member img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  .team-member h3 {
-    margin-top: 0;
-  }
   
   .title {
     color: white;
   }
+  html {
+    scroll-behavior: smooth;
+}
