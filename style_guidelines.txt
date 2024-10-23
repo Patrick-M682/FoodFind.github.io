@@ -1,0 +1,12 @@
+Color theme:
+    Black, white and blue (#575AE6)
+    Dark colors for navigation bar
+Typography (Bold, Italic):
+    Italique: Fake reviews and soustitre secondaire
+    Bold: sous titre et nos nom
+What Fonts are we using?
+    Regular text: noto sans
+Logo: FoodFind
+Tone: 
+    Serious
+    Appetizing
