@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(183, 230, 173);
+    background-color: #A8D4Eb;
     font-family: 'Roboto', sans-serif;
 
   }
@@ -23,7 +23,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgb(77, 155, 90);
+    background: #5787E6;
     font-family: calibri;
     padding-right: 15px;
     padding-left: 15px;
