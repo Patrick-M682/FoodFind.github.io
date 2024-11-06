@@ -1,2 +1,27 @@
+.img-eye {
 
-    
+    background-image: url(img/fridge2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 60px);
+    padding:20px;
+}
+
+h1 {
+    backdrop-filter: blur(3px) saturate(70%);
+  }
+  
+  h1 {
+    width: fit-content; 
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+
+
+  h1.special-page {
+    color: whitesmoke; 
+    position: relative;
+    top: 120px;  /* Moves text 10px down from its original position */
+  }
