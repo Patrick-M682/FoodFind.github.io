@@ -1,20 +1,16 @@
-body {
-    background-color: #A8D4Eb;
-    font-family: 'Roboto', sans-serif;
-
-  }
-
   .header {
     background-color: #4dc0b0;
     color: #fff;
     padding: 10px 0;
     text-align: center;
   }
+  
   .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
   }
+  
   * {
     text-decoration: none;
 }
@@ -104,6 +100,14 @@ li a:hover {
   .title {
     color: white;
   }
-  html {
-    scroll-behavior: smooth;
+  
+html, body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #A8D4Eb;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+
 }

@@ -21,7 +21,7 @@ h1 {
 
 
   h1.special-page {
-    color: whitesmoke; 
+    color: rgb(224, 36, 36); 
     position: relative;
     top: 120px;  /* Moves text 10px down from its original position */
   }
