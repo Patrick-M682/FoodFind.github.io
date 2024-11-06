@@ -1,0 +1,96 @@
+body{
+    background-image: url(foodiesfeed.com_tacos-on-a-wooden-plate.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(121, 110, 110, 0.5);
+    z-index: -1;
+}
+
+.head_body{
+    text-align:center;
+    text-transform: uppercase;
+    color: #7779e1;
+    font-weight: bold;
+}
+
+h3{
+    color:#333;
+    font-size: 1em;
+}
+
+.head_title{
+    text-align: center;
+    line-height: 15px;
+    font-size: 18px;
+    color: #fff4f4;
+}
+
+.Sous_titre{
+    text-align: center;
+}
+
+.grid-container{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.list{
+   
+    line-height: 20px;
+    color: #000000;
+    padding: 20px;
+    background-color:#e2e2d0;
+    text-align: center;
+    border-radius: 10px;
+   
+    margin: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    
+    
+    
+}
+#sous_TITRE2{
+    font-style: italic;
+    text-align: center;
+}
+
+body{
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    color: #000000;
+}
+.head_body{
+
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    text-align: center;
+
+}
+.button_1{
+    background-color: rgb(238, 225, 150);
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.button_1:hover{
+    background-color: #FFA500;
+}
