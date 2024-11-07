@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodFind</title>
-    <link rel="stylesheet" href="Homepage.css"/>
+    <link rel="stylesheet" href="Homepage.css" />
     <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -23,24 +27,30 @@
       </div>
     </nav>
 
-    <!-- Background image -->
+    <!-- Background image container with rotating images -->
     <div class="img-eye">
-      <!-- Centered Text Section -->
-      <h1 class="special-page" style="text-align: center">"From Fridge to Feast"</h1> 
-<!--
-      <h2 style="text-align: center">Features</h2>
-      <h3 style="text-align: center">
-        1. Documents the items in your fridge with as little as a picture!
-      </h3>
-      <h3 style="text-align: center">
-        2. Automatically updates grocery list when an item runs low!
-      </h3>
-      <h3 style="text-align: center">
-        3. Gives you personnalised recipes based on the items in your fridge!
-      </h3>
-    -->
+      <div class="slideshow">
+        <img
+          src="../Home_Page/img/food.jpg"
+          alt="Fridge image 1"
+          class="slide active"
+        />
+        <img
+          src="../Home_Page/img/fridge.jpg"
+          alt="Fridge image 2"
+          class="slide"
+        />
+        <img
+          src="../Home_Page/img/fridge2.jpg"
+          alt="Fridge image 3"
+          class="slide"
+        />
+      </div>
+      <h1 class="special-page">"From Fridge to Feast"</h1>
+      <!-- Timer bar for image transitions -->
+      <div class="timer-bar"></div>
     </div>
 
-
+    <script src="../Home_Page/HomePage.js"></script>
   </body>
 </html>

@@ -1,27 +1,104 @@
+/* Background Image Styling */
 .img-eye {
-
-    background-image: url(img/fridge2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: calc(100vh - 60px);
-    padding:20px;
+  width: 80%; 
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
-h1 {
-    backdrop-filter: blur(3px) saturate(70%);
-  }
-  
-  h1 {
-    width: fit-content; 
-    height: auto;
-    padding: 20px;
-    margin: 0 auto;
-  }
+.slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
+.slide.active {
+  opacity: 1;
+}
 
-  h1.special-page {
-    color: rgb(224, 36, 36); 
-    position: relative;
-    top: 120px;  /* Moves text 10px down from its original position */
+/* Timer Bar Styling */
+.timer-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  background-color: #ff4b2b;
+  width: 0; /* Initial width of the timer bar */
+  transition: width 3s linear;
+}
+
+/* Dark Overlay for Text Contrast */
+.img-eye::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Title Styling */
+h1.special-page {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  width: fit-content;
+
+  /* Enhanced Text Shadow */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+
+  /* Subtle Gradient for a Highlighted Effect */
+  background: linear-gradient(45deg, rgba(40, 230, 173, 0.7), rgba(40, 230, 173, 0.7));
+  background-clip: padding-box; /* Background within padding area */
+  -webkit-background-clip: padding-box;
+
+  /* Animation */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
   }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
