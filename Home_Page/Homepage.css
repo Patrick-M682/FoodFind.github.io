@@ -1,35 +1,118 @@
-/* Background Image Styling */
-.img-eye {
-  width: 100%; 
-  height: 100vh;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-/*Stops from scrolling*/
-html, body {
-  overflow: hidden;
-  height: 100%; /* Ensures the entire viewport is covered*/
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.slideshow {
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo a {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Auth Buttons (Positioned Top-Right) */
+.auth-buttons {
   position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.auth-buttons a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Full-Screen Background Slideshow */
+.img-eye {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Background Overlay for Improved Text Visibility */
+.img-eye::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  z-index: 1;
 }
 
 .slide {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -38,73 +121,70 @@ html, body {
   opacity: 1;
 }
 
-/* Timer Bar Styling */
-.timer-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px;
-  background-color: #ff4b2b;
-  width: 0; /* Initial width of the timer bar */
-  transition: width 3s linear;
+/* Title Styling with Improved Visibility */
+h1.title {
+  font-size: 5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f4e04d;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+  animation: titleFadeIn 2s ease-in-out forwards;
+  opacity: 0; /* Start hidden */
+  z-index: 2; /* Ensure it’s above the overlay */
 }
 
-/* Dark Overlay for Text Contrast */
-.img-eye::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+/* Slogan Styling with Improved Visibility */
+h2.slogan {
+  font-size: 2.5em;
+  color: #f8f8f8;
+  font-style: italic;
+  margin-top: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+  animation: sloganBounce 3s ease infinite alternate;
+  z-index: 2; /* Ensure it’s above the overlay */
+}
+
+/* Keyframe Animations */
+@keyframes titleFadeIn {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes sloganBounce {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-10px);
+  }
+}
+
+/* Company Information Section */
+.company-info {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 50vh;
   z-index: 1;
 }
 
-/* Title Styling */
-h1.special-page {
-  font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  padding: 20px;
-  margin: 0 auto;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  width: fit-content;
-
-  /* Enhanced Text Shadow */
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-
-  /* Subtle Gradient for a Highlighted Effect */
-  background: linear-gradient(45deg, #5787E6, #648fe6);
-  opacity: 0.7;
-  background-clip: padding-box; /* Background within padding area */
-  -webkit-background-clip: padding-box;
-
-  /* Animation */
-  animation: float 3s ease-in-out infinite;
+.company-info h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-/* Floating Animation */
-@keyframes float {
-  0%, 100% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(-10px);
-  }
-}
-
-/* Floating Animation */
-@keyframes float {
-  0%, 100% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(-10px);
-  }
+.company-info p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
 }
