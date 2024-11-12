@@ -86,101 +86,212 @@ h2.slogan {
   }
 }
 
-/* Company Information Section */
+/* Company Information Section with Two-Column Layout */
 .company-info {
-  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
   padding: 60px 20px;
-  text-align: center;
-  min-height: 50vh;
-  z-index: 1;
+  background-color: #f8f8f8;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
-.company-info h2 {
-  font-size: 2em;
+/* Triggered when section scrolls into view */
+.company-info.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Company Text with Hover and Scroll Animation */
+.company-text {
+  flex: 1;
+  padding-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.company-text h2 {
+  font-size: 2.5em;
   color: #333;
   margin-bottom: 20px;
-}
-
-.company-info p {
-  font-size: 1.1em;
-  color: #666;
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-}
-/* Features Section */
-.features-section {
-  display: flex;
-  justify-content: center;  /* Center the feature boxes */
-  align-items: center;
-  padding: 60px 20px; /* Adjust padding to make it closer to the About section */
-  background-color: #f8f8f8;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  gap: 20px; /* Space between features */
-  z-index: 1;
-  margin-top: -40px; /* Bring the features section closer to the About section */
-}
-
-/* Feature Container */
-.features-section .feature {
-  background-size: cover;
-  background-position: center;
-  width: 350px;  /* Increased width for a larger display */
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow to make it pop */
-  text-align: center;
-  color: white; /* Text color for better contrast */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(50px); /* Start from below */
-  animation: featurePopIn 1s forwards; /* Animation for popping in */
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-  position: relative;
-}
-
-/* Text Styling (Overlay on Images) */
-.features-section .feature h3 {
-  font-size: 1.8em;
-  color: rgb(0, 0, 0);
-  margin-bottom: 15px;
   font-weight: bold;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Dark shadow for better readability */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-.features-section .feature p {
-  font-size: 1.1em;
-  color: rgb(0, 0, 0);
+/* Hover Effect to Move Text */
+.company-text:hover h2,
+.company-text:hover p {
+  transform: translateX(10px); /* Moves text slightly to the right */
+}
+
+/* Description Text */
+.company-text p {
+  font-size: 1.2em;
+  color: #666;
   line-height: 1.6;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-/* Animation for feature pop-in */
-@keyframes featurePopIn {
+/* Image Styling */
+.company-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: imageFadeIn 1.5s ease forwards 0.5s;
+}
+
+.company-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.company-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes for Image Fade-in */
+@keyframes imageFadeIn {
   0% {
     opacity: 0;
-    transform: scale(0.9) translateY(50px); /* Start smaller and below */
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
-    transform: scale(1) translateY(0); /* End at full size and normal position */
+    transform: translateX(0);
   }
 }
 
-/* Animation Delay for Staggered Effect */
-.features-section .feature:nth-child(1) {
-  animation-delay: 0.3s;
+/* Pricing Section */
+.pricing-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
 }
 
-.features-section .feature:nth-child(2) {
-  animation-delay: 0.6s;
+.pricing-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-.features-section .feature:nth-child(3) {
-  animation-delay: 0.9s;
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Hover Effect (Pop-out when hovered) */
-.features-section .feature:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+.pricing-plan {
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
+
+.pricing-plan h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pricing-plan p {
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #555;
+}
+
+.pricing-plan ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.pricing-plan ul li {
+  font-size: 1em;
+  color: #666;
+  margin: 8px 0;
+}
+
+/* Features Section */
+.features-section {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px 20px; /* Added horizontal padding for mobile */
+  background-color: #5787E6;
+}
+
+.feature-card {
+  position: relative;
+  width: 400px; /* Increased width for more space */
+  height: 380px; /* Adjusted height for better aspect ratio */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  color: #161515;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: transform 0.5s ease;
+}
+
+.feature-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px; /* Increased padding for text spacing */
+  background: rgba(131, 167, 237, 0.9);
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding doesn’t expand beyond width */
+}
+
+.feature-card:hover .feature-image {
+  transform: scale(1.05);
+}
+
+.feature-card:hover .feature-content {
+  transform: translateY(0);
+}
+
+.feature-title {
+  font-size: 1.5em; /* Increased font size slightly */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f2b437;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  white-space: nowrap; /* Keeps title on one line */
+  overflow: hidden; /* Prevents overflow */
+  text-overflow: ellipsis; /* Adds “...” if title is too long */
+}
+
+.feature-description {
+  font-size: 1.1em;
+  line-height: 1.4;
+  color: #f0f0f0;
+  overflow-wrap: break-word; /* Breaks long words to fit in box */
+}
+
+/* Smooth appearance for feature cards */
+.feature-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
