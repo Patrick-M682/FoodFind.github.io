@@ -40,46 +40,118 @@
     </div>
 
     <!-- Company Information Section -->
-    <section class="company-info">
-      <h2>About FoodFind</h2>
-      <p>
-        FoodFind is dedicated to making your culinary journey easier and more
-        enjoyable. Our app helps you turn ingredients you already have into
-        delicious meals, reducing food waste and bringing excitement to your
-        kitchen.
-      </p>
-    </section>
-    <!-- Feature Explanations Section -->
-    <section class="features-section">
-      <div
-        class="feature"
-        style="background-image: url('img/grocery-list.jpg')"
-      >
-        <h3>Grocery List</h3>
+    <section class="company-info" id="about-section">
+      <div class="company-text">
+        <h2>About FoodFind</h2>
         <p>
-          Our Grocery List feature helps ensure you never miss an essential
-          ingredient. Organize, manage, and update your grocery list in
-          real-time for a streamlined shopping experience.
+          FoodFind is dedicated to making your culinary journey easier and more
+          enjoyable. Our app helps you turn ingredients you already have into
+          delicious meals, reducing food waste and bringing excitement to your
+          kitchen.
         </p>
       </div>
-      <div class="feature" style="background-image: url('img/delivery.jpg')">
-        <h3>Deliveries</h3>
-        <p>
-          With our efficient delivery service, you get your groceries right when
-          you need them. It’s all about convenience, speed, and reliability to
-          help simplify your daily life.
-        </p>
-      </div>
-      <div class="feature" style="background-image: url('img/recipes.jpg')">
-        <h3>Recipes</h3>
-        <p>
-          Discover a world of culinary possibilities with our Recipes feature.
-          From quick meals to gourmet dishes, our recipes inspire creativity,
-          making it easy to turn your ingredients into amazing meals.
-        </p>
+      <div class="company-image">
+        <img src="./img/Cooking.jpg" alt="Chef cooking in the kitchen" />
       </div>
     </section>
 
+    <!-- Link the separated JavaScript file -->
+    <script src="../Home_Page/HomePage.js"></script>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="feature-card" id="grocery-list">
+        <img
+          src="./img/Grocery.jpg"
+          alt="Grocery List Feature"
+          class="feature-image"
+        />
+        <div class="feature-content">
+          <h3 class="feature-title">Grocery List</h3>
+          <p class="feature-description">
+            Our Grocery List feature helps ensure you never miss an essential
+            ingredient. Organize, manage, and update your grocery list in
+            real-time for a streamlined shopping experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" id="deliveries">
+        <img
+          src="./img/young-smiling-emotional-courier-guy-red-uniform-sitting-scooter-giving-paper-bag-white-wall_179666-33650.avif"
+          alt="Deliveries Feature"
+          class="feature-image"
+        />
+        <div class="feature-content">
+          <h3 class="feature-title">Deliveries</h3>
+          <p class="feature-description">
+            With our efficient delivery service, you get your groceries right
+            when you need them. It’s all about convenience, speed, and
+            reliability to help simplify your daily life.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card" id="recipes">
+        <img
+          src="./img/recipe.jpg"
+          alt="Recipes Feature"
+          class="feature-image"
+        />
+        <div class="feature-content">
+          <h3 class="feature-title">Recipes</h3>
+          <p class="feature-description">
+            Discover a world of culinary possibilities with our Recipes feature.
+            From quick meals to gourmet dishes, our recipes inspire creativity,
+            making it easy to turn your ingredients into amazing meals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+      <h2>Choose Your Plan</h2>
+      <div class="pricing-container">
+        <div class="pricing-plan">
+          <h3>Plan</h3>
+          <p>$9.99/month</p>
+          <p>(Basic)</p>
+          <p>Start your free trial today.</p>
+          <ul>
+            <li>Access to all standard articles and content.</li>
+            <li>Email support within 48 hours</li>
+            <li>Usage on 1 device at a time</li>
+            <li>Limited access to premium features</li>
+          </ul>
+        </div>
+        <div class="pricing-plan">
+          <h3>Subscription</h3>
+          <p>$12.99/month</p>
+          <p>(Premium)</p>
+          <p>Start your free trial today.</p>
+          <ul>
+            <li>Access to all content, including exclusives</li>
+            <li>Priority support within 24 hours</li>
+            <li>Usage on up to 3 devices at a time</li>
+            <li>Download content for offline use</li>
+          </ul>
+        </div>
+        <div class="pricing-plan">
+          <h3>Subscription</h3>
+          <p>$119.99/year</p>
+          <p>(Pro)</p>
+          <p>Start your free trial today.</p>
+          <ul>
+            <li>All the benefits of the Premium plan, with annual savings</li>
+            <li>VIP support in less than 12 hours</li>
+            <li>Usage on up to 5 devices at a time</li>
+            <li>Invitations to exclusive events</li>
+            <li>Free updates for new features</li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <script src="../Home_Page/HomePage.js"></script>
   </body>
 </html>
