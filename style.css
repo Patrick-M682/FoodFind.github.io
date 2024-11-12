@@ -3,7 +3,7 @@
 .header {
     background-color: #4dc0b0;
     color: #fff;
-    padding: 10px 0;
+    padding: 0.625em 0; /* 10px to em */
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -24,8 +24,8 @@
     z-index: 1000;
     background: #5787E6;
     font-family: 'Poppins', sans-serif;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1em; /* 15px to em */
+    padding-left: 1em;
 }
 
 .navdiv {
@@ -35,7 +35,7 @@
 }
 
 .logo a {
-    font-size: 35px;
+    font-size: 2.1875em; /* 35px to em */
     font-weight: 600;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -45,27 +45,28 @@ li {
     list-style: none;
     display: inline-block;
 }
+
 li a {
     color: white;
-    font-size: 18px;
+    font-size: 1.125em; /* 18px to em */
     font-weight: bold;
-    margin-right: 25px;
+    margin-right: 1.5625em; /* 25px to em */
 }
 
 button {
     background-color: black;
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 90px;
-    border: 2px solid transparent;
+    margin-left: 0.625em; /* 10px to em */
+    border-radius: 0.625em; /* 10px to em */
+    padding: 0.625em; /* 10px to em */
+    width: 5.625em; /* 90px to em */
+    border: 0.125em solid transparent; /* 2px to em */
     font-family: 'Poppins', sans-serif;
 }
 
 button a {
     color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 0.9375em; /* 15px to em */
     display: block;
     text-align: center;
 }
@@ -76,23 +77,23 @@ button, li a {
 
 button:hover {
     background-color: transparent;
-    border: 2px solid white;
-    transform: translateY(-2px);
+    border: 0.125em solid white; /* 2px to em */
+    transform: translateY(-0.125em); /* 2px to em */
 }
 
 li a:hover {
     color: white;
-    border-bottom: 2px solid white;
-    transform: translateY(-2px);
+    border-bottom: 0.125em solid white; /* 2px to em */
+    transform: translateY(-0.125em); /* 2px to em */
 }
 
 .main-content {
-    padding: 20px;
+    padding: 1.25em; /* 20px to em */
     background: #fff;
-    margin: 20px 0;
-  }
-  
-  h1,h2 {
+    margin: 1.25em 0;
+}
+
+h1, h2 {
     color: #333;
     font-family: 'Poppins', sans-serif;
 }
@@ -104,8 +105,8 @@ p {
 
 .title {
     color: white;
-  }
-  
+}
+
 html, body {
     margin: 0;
     padding: 0;

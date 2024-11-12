@@ -1,94 +1,113 @@
+/* General Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('https://i.pinimg.com/736x/07/9f/fc/079ffc1c7bc9f4ad54455bb2669073bf.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color:#A8D4Eb;
     color: #333;
-}
-
-header {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 1em;
-    text-align: center;
-}
-
-nav {
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    padding: 0.5em;
-    position: fixed;
+  }
+  
+  /* Modern Image Slider */
+  .slider {
+    position: relative;
     width: 100%;
-    top: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-    border-radius: 4px;
-}
-
-main {
-    padding: 5em 2em 2em 2em;
-    margin-top: 50px;
-}
-
-.feature {
-    display: flex;
-    align-items: center;
-    background-color: rgba(200, 200, 200, 0.8);
-    padding: 1em;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2em;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease-out forwards;
-}
-
-.feature img {
-    width: 75px; /* Adjust the value to your preference */
-    height: auto;
-    border-radius: 5px;
-    margin-right: 1em;
-}
-
-.feature-text {
-    flex: 1;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
     }
-}
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Animation for Slider */
+  .fade {
+    animation: fade 10s infinite;
+  }
+  
+  /* Feature Section */
+  .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: scale(1.05);
+  }
+  
+  .feature img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .feature-text {
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  .feature-text h2, .feature-text h3 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .feature-text p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .fun-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .fun-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .feature {
+      flex-direction: column;
+    }
+  
+    .feature img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

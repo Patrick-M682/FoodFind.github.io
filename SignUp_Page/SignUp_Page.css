@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #FFB347, #FFCC33);
+    background: linear-gradient(to right, #28c6ee, #06b6fb);
     overflow: hidden;
   }
   
@@ -127,4 +127,4 @@
   }
   
   .back-button:hover {
-    background-color: #ff4500; /* Darker tomato color */
+    background-color: #ff4500; /* Darker tomato color */}
