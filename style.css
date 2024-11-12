@@ -1,30 +1,32 @@
-  .header {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.header {
     background-color: #4dc0b0;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-  }
-  
-  .container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
     width: 80%;
     margin: auto;
     overflow: hidden;
-  }
-  
-  * {
+}
+
+* {
     text-decoration: none;
 }
 
-  .navbar {
+.navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
     background: #5787E6;
-    font-family: calibri;
+    font-family: 'Poppins', sans-serif;
     padding-right: 15px;
     padding-left: 15px;
 }
-
 
 .navdiv {
     display: flex;
@@ -36,6 +38,7 @@
     font-size: 35px;
     font-weight: 600;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 li {
@@ -43,71 +46,72 @@ li {
     display: inline-block;
 }
 li a {
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
 }
 
-/* Buttons styling */
 button {
     background-color: black;
     margin-left: 10px;
     border-radius: 10px;
     padding: 10px;
     width: 90px;
-    border: 2px solid transparent; /* Transparent border by default */
+    border: 2px solid transparent;
+    font-family: 'Poppins', sans-serif;
 }
 
 button a {
     color: white;
     font-weight: bold;
     font-size: 15px;
-    display: block; /* Ensures the button link covers the entire button */
+    display: block;
     text-align: center;
 }
 
 button, li a {
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-/* Hover effect for buttons */
 button:hover {
-    background-color: transparent; /* Make background transparent */
-    border: 2px solid white; /* White border on hover */
-    transform: translateY(-2px); 
+    background-color: transparent;
+    border: 2px solid white;
+    transform: translateY(-2px);
 }
 
-/* Links hover effect */
 li a:hover {
     color: white;
-    border-bottom: 2px solid white; /* Underline the text with a rectangle on hover */
-    transform: translateY(-2px); 
+    border-bottom: 2px solid white;
+    transform: translateY(-2px);
 }
-  .main-content {
+
+.main-content {
     padding: 20px;
     background: #fff;
     margin: 20px 0;
-  }
-  
-  h1,h2 {
-    color: #333;
-  }
-  p {
-    line-height: 1.6;
-  }
-  
-  .title {
-    color: white;
-  }
-  
-html, body {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: #A8D4Eb;
-  font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
+}
 
+h1, h2 {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: #A8D4Eb;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
