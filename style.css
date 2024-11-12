@@ -89,7 +89,7 @@ li a:hover {
     background: #fff;
     margin: 20px 0;
   }
-  
+ 
   h1,h2 {
     color: #333;
   }
@@ -100,7 +100,7 @@ li a:hover {
   .title {
     color: white;
   }
-  
+
 html, body {
   margin: 0;
   padding: 0;
@@ -111,3 +111,4 @@ html, body {
   scroll-behavior: smooth;
 
 }
+
