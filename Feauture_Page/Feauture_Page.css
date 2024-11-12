@@ -111,3 +111,64 @@ body {
     }
   }
   
+/* Pop-up Text Box */
+.text-box {
+  display: none; /* Initially hide the text box */
+  padding: 30px; /* Space inside the box */
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%; /* Set the width to 60% of the screen */
+  max-width: 900px; /* Optional: Max width to limit its growth */
+  height: auto; /* Allow height to grow with content */
+  max-height: 80vh; /* Optional: Max height to prevent it from growing too tall */
+  overflow-y: auto; /* Adds scrolling if content exceeds max height */
+  position: fixed; /* Position it over the page */
+  top: 50%; /* Vertically center the box */
+  left: 50%; /* Horizontally center the box */
+  transform: translate(-50%, -50%); /* Adjust positioning to exactly center it */
+  z-index: 1000; /* Ensure it appears on top of other content */
+  background-color: rgba(244, 244, 244, 0.95); /* Slight transparency for the background */
+  padding: 40px; /* Add padding for a spacious feel */
+  text-align: center; /* Center the text */
+  box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+/* Close button */
+.close-btn {
+  position: absolute; /* Position the close button inside the text box */
+  top: 10px;
+  right: 10px;
+  background-color: red; 
+  color: white; 
+  border: none;
+  border-radius: 50%; 
+  width: 30px; 
+  height: 30px; 
+  font-size: 20px; 
+  font-weight: bold; 
+  text-align: center; 
+  line-height: 30px; 
+  cursor: pointer; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.close-btn:hover {
+  background-color: darkred; 
+}
+
+/* Learn More Button */
+.learn-more-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #45a049;
+}

@@ -68,7 +68,13 @@
               This grocery list is essential for ensuring the smooth operation
               of our company.
             </p>
-            <button class="fun-button">Learn More</button>
+            <button class="fun-button" onclick="toggleTextBox('groceryTextBox')">Learn More</button>
+            <!-- Hidden text box for more information -->
+            <div class="text-box" id="groceryTextBox">
+              <!-- Close Button -->
+              <button class="close-btn" onclick="toggleTextBox('groceryTextBox')">X</button>
+              <p>Here’s more information about the Grocery List feature, including details on usage and benefits.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -107,7 +113,7 @@
         </div>
       </section>
     </main>
-
+    <script src="Feature_page.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
