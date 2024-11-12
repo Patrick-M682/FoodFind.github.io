@@ -65,15 +65,17 @@
           <div class="feature-text">
             <h2>Grocery List</h2>
             <p>
-              This grocery list is essential for ensuring the smooth operation
-              of our company.
+              Updates automatically based on the food in your fridge.
             </p>
             <button class="fun-button" onclick="toggleTextBox('groceryTextBox')">Learn More</button>
             <!-- Hidden text box for more information -->
             <div class="text-box" id="groceryTextBox">
               <!-- Close Button -->
               <button class="close-btn" onclick="toggleTextBox('groceryTextBox')">X</button>
-              <p>Here’s more information about the Grocery List feature, including details on usage and benefits.</p>
+              <p>Our grocery list feature uses state of the art sensors in your fridge to automatically
+                update the items in your grocery list based on your needs. Items are colour coded based 
+                on urgency. 
+              </p>
             </div>
           </div>
         </div>
@@ -91,7 +93,21 @@
               Our delivery service is designed to provide our customers with a
               convenient and fast experience.
             </p>
-            <button class="fun-button">Learn More</button>
+            <button class="fun-button" onclick="toggleTextBox('deliveriesTextBox')">Learn More</button>
+            <!-- Hidden text box for more information -->
+            <div class="text-box" id="deliveriesTextBox">
+              <!-- Close Button -->
+              <button class="close-btn" onclick="toggleTextBox('deliveriesTextBox')">X</button>
+              <p>
+                Our Delivery Feature ensures fast and convenient service, allowing users to 
+                order groceries directly through our app. With real-time tracking, you can 
+                monitor your delivery from preparation to doorstep. 
+                Additionally, users can schedule deliveries at their convenience, 
+                ensuring fresh and timely arrivals. This feature aims to save time and 
+                enhance your food experience by making high-quality products accessible 
+                with just a few clicks.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -108,7 +124,21 @@
               Our recipes feature offers a delightful collection of dishes that
               inspire creativity in the kitchen.
             </p>
-            <button class="fun-button">Learn More</button>
+            <button class="fun-button" onclick="toggleTextBox('recipeTextBox')">Learn More</button>
+            <!-- Hidden text box for more information -->
+            <div class="text-box" id="recipeTextBox">
+              <!-- Close Button -->
+              <button class="close-btn" onclick="toggleTextBox('recipeTextBox')">X</button>
+              <p>
+                The FoodFind app offers personalized recipe suggestions based on the 
+                ingredients you already have in your fridge. You can tailor this feature 
+                to include your preferred meals and dietary restrictions, ensuring 
+                that every recipe fits your tastes and nutritional needs. 
+                Whether you're looking to create something new or stick to your favorites, 
+                FoodFind makes meal planning easy and convenient, helping you reduce food 
+                waste while enjoying tasty meals.
+              </p>
+            </div>
           </div>
         </div>
       </section>

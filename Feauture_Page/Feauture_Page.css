@@ -112,31 +112,29 @@ body {
   }
   
 /* Pop-up Text Box */
+
+
 .text-box {
-  display: none; /* Initially hide the text box */
-  padding: 30px; /* Space inside the box */
+  display: none; 
+  padding: 30px; 
   background-color: #f4f4f4;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 60%; /* Set the width to 60% of the screen */
-  max-width: 900px; /* Optional: Max width to limit its growth */
-  height: auto; /* Allow height to grow with content */
-  max-height: 80vh; /* Optional: Max height to prevent it from growing too tall */
-  overflow-y: auto; /* Adds scrolling if content exceeds max height */
-  position: fixed; /* Position it over the page */
-  top: 50%; /* Vertically center the box */
-  left: 50%; /* Horizontally center the box */
-  transform: translate(-50%, -50%); /* Adjust positioning to exactly center it */
-  z-index: 1000; /* Ensure it appears on top of other content */
-  background-color: rgba(244, 244, 244, 0.95); /* Slight transparency for the background */
-  padding: 40px; /* Add padding for a spacious feel */
-  text-align: center; /* Center the text */
-  box-sizing: border-box; /* Ensure padding does not affect the width */
+  width: 60%; 
+  height: auto; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1000; 
+  background-color: rgba(244, 244, 244, 0.95); 
+  padding: 40px; 
+  text-align: center; 
+  box-sizing: border-box; 
 }
 
 /* Close button */
 .close-btn {
-  position: absolute; /* Position the close button inside the text box */
+  position: absolute; 
   top: 10px;
   right: 10px;
   background-color: red; 
