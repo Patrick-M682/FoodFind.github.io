@@ -3,173 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodFind - Feature Page</title>
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../Feauture_Page/Feauture_Page.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        background-color: #f5f5f5;
-        font-family: "Roboto", sans-serif;
-        margin: 0;
-        color: #333;
-      }
-
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-      }
-
-      header h1 {
-        font-size: 36px;
-        margin: 0;
-        font-family: "Comic Sans MS", cursive;
-      }
-
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 20px;
-      }
-
-      nav ul li {
-        display: inline;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-      }
-
-      main {
-        padding: 20px;
-      }
-
-      .feature {
-        display: flex;
-        align-items: center;
-        margin: 40px 0;
-        padding: 20px;
-        background: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-      }
-
-      .feature:hover {
-        transform: scale(1.05);
-      }
-
-      .feature img {
-        width: 300px;
-        height: 200px;
-        border-radius: 10px;
-        margin-right: 20px;
-      }
-
-      .feature-text {
-        max-width: 600px;
-      }
-
-      .feature h2,
-      .feature h3 {
-        font-size: 28px;
-        margin-top: 0;
-        color: #555;
-      }
-
-      .feature p {
-        font-size: 16px;
-        line-height: 1.6;
-      }
-
-      footer {
-        text-align: center;
-        padding: 10px 20px;
-        background-color: #333;
-        color: #fff;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-
-      .fun-button {
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #ff9800;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.3s;
-      }
-
-      .fun-button:hover {
-        background-color: #f57c00;
-        transform: scale(1.1);
-      }
-
-      .carousel {
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-        margin: 20px 0;
-      }
-
-      .carousel img {
-        flex: 1;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .carousel img:hover {
-        transform: scale(1.1);
-      }
-    </style>
+    <title>FoodFind Features</title>
   </head>
   <body>
     <header>
-      <h1>FoodFind</h1>
       <nav class="navbar">
         <div class="navdiv">
-          <div class="logo"><a href="#">FoodFind</a></div>
+          <div class="logo">
+            <a href="../Home_Page/HomePageIndex.html">FoodFind</a>
+          </div>
           <ul>
             <li><a href="../Home_Page/HomePageIndex.html">Home</a></li>
             <li><a href="../Pricing_Page/Pricing_Page.html">Pricing</a></li>
             <li><a href="../Feauture_Page/Features_Page.html">Features</a></li>
             <li><a href="../About_Me_Page/About_Me_Page.html">About</a></li>
-            <button><a href="#">LogIn</a></button>
-            <button><a href="#">SignUp</a></button>
+            <button><a href="../Log_in_Page/Log_in_Page.html">LogIn</a></button>
+            <button>
+              <a href="../SignUp_Page/SignUp_Page.html">SignUp</a>
+            </button>
           </ul>
         </div>
       </nav>
     </header>
+
     <main>
-      <!-- Image Carousel -->
-      <div class="carousel">
-        <img
-          src="https://img.freepik.com/premium-vector/smartphone-grocery-list-abstract-smartphone-interface-checklist-screen-with-bag-grid_508396-288.jpg"
-          alt="Grocery List"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/023/152/174/large/food-delivery-on-moped-animation-meal-kit-courier-driver-riding-electric-scooter-isolated-2d-cartoon-flat-character-4k-footage-on-white-background-with-alpha-channel-transparency-for-web-design-video.jpg"
-          alt="Deliveries"
-        />
-        <img
-          src="https://img.freepik.com/free-vector/tiny-female-chef-cooking-vegan-meal-using-recipe-kitchen-cook-making-dish-from-restaurant-menu-flat-vector-illustration-healthy-food-diet-culinary-nutrition-concept-website-design_74855-22063.jpg"
-          alt="Recipes"
-        />
+      <!-- Modern Image Slider -->
+      <div class="slider">
+        <div class="slide fade">
+          <img
+            src="https://img.freepik.com/premium-vector/smartphone-grocery-list-abstract-smartphone-interface-checklist-screen-with-bag-grid_508396-288.jpg"
+            alt="Grocery List"
+          />
+        </div>
+        <div class="slide fade">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/023/152/174/large/food-delivery-on-moped-animation-meal-kit-courier-driver-riding-electric-scooter-isolated-2d-cartoon-flat-character-4k-footage-on-white-background-with-alpha-channel-transparency-for-web-design-video.jpg"
+            alt="Deliveries"
+          />
+        </div>
+        <div class="slide fade">
+          <img
+            src="https://img.freepik.com/free-vector/tiny-female-chef-cooking-vegan-meal-using-recipe-kitchen-cook-making-dish-from-restaurant-menu-flat-vector-illustration-healthy-food-diet-culinary-nutrition-concept-website-design_74855-22063.jpg"
+            alt="Recipes"
+          />
+        </div>
       </div>
+
+      <!-- Features Sections -->
       <section id="grocery-list">
         <div class="feature">
           <img
             src="https://img.freepik.com/premium-vector/smartphone-grocery-list-abstract-smartphone-interface-checklist-screen-with-bag-grid_508396-288.jpg"
-            width="500"
-            height="400"
             alt="Grocery List"
           />
           <div class="feature-text">
@@ -178,16 +68,21 @@
               This grocery list is essential for ensuring the smooth operation
               of our company.
             </p>
-            <button class="fun-button">Learn More</button>
+            <button class="fun-button" onclick="toggleTextBox('groceryTextBox')">Learn More</button>
+            <!-- Hidden text box for more information -->
+            <div class="text-box" id="groceryTextBox">
+              <!-- Close Button -->
+              <button class="close-btn" onclick="toggleTextBox('groceryTextBox')">X</button>
+              <p>Here’s more information about the Grocery List feature, including details on usage and benefits.</p>
+            </div>
           </div>
         </div>
       </section>
+
       <section id="deliveries">
         <div class="feature">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/023/152/174/large/food-delivery-on-moped-animation-meal-kit-courier-driver-riding-electric-scooter-isolated-2d-cartoon-flat-character-4k-footage-on-white-background-with-alpha-channel-transparency-for-web-design-video.jpg"
-            width="500"
-            height="400"
             alt="Deliveries"
           />
           <div class="feature-text">
@@ -200,12 +95,11 @@
           </div>
         </div>
       </section>
+
       <section id="recipes">
         <div class="feature">
           <img
             src="https://img.freepik.com/free-vector/tiny-female-chef-cooking-vegan-meal-using-recipe-kitchen-cook-making-dish-from-restaurant-menu-flat-vector-illustration-healthy-food-diet-culinary-nutrition-concept-website-design_74855-22063.jpg"
-            width="500"
-            height="400"
             alt="Recipes"
           />
           <div class="feature-text">
@@ -219,6 +113,7 @@
         </div>
       </section>
     </main>
+    <script src="Feature_page.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

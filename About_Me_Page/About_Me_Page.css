@@ -14,7 +14,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   .team-member img {
-    width: 100%;
+    width: auto;
+    height: 200px;
     border-radius: 5px;
   }
   .team-member h3 {

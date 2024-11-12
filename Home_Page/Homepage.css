@@ -1,35 +1,38 @@
-/* Background Image Styling */
+
+/* Full-Screen Background Slideshow */
 .img-eye {
-  width: 100%; 
-  height: 100vh;
-  margin: 0 auto;
   position: relative;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-}
-/*Stops from scrolling*/
-html, body {
-  overflow: hidden;
-  height: 100%; /* Ensures the entire viewport is covered*/
+  text-align: center;
+  color: white;
 }
 
-.slideshow {
+/* Background Overlay for Improved Text Visibility */
+.img-eye::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  z-index: 1;
 }
 
 .slide {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -38,73 +41,146 @@ html, body {
   opacity: 1;
 }
 
-/* Timer Bar Styling */
-.timer-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px;
-  background-color: #ff4b2b;
-  width: 0; /* Initial width of the timer bar */
-  transition: width 3s linear;
+/* Title Styling with Improved Visibility */
+h1.title {
+  font-size: 5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f4e04d;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+  animation: titleFadeIn 2s ease-in-out forwards;
+  opacity: 0; /* Start hidden */
+  z-index: 2; /* Ensure it’s above the overlay */
 }
 
-/* Dark Overlay for Text Contrast */
-.img-eye::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+/* Slogan Styling with Improved Visibility */
+h2.slogan {
+  font-size: 2.5em;
+  color: #f8f8f8;
+  font-style: italic;
+  margin-top: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+  animation: sloganBounce 3s ease infinite alternate;
+  z-index: 2; /* Ensure it’s above the overlay */
+}
+
+/* Keyframe Animations */
+@keyframes titleFadeIn {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes sloganBounce {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-10px);
+  }
+}
+
+/* Company Information Section */
+.company-info {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 50vh;
   z-index: 1;
 }
 
-/* Title Styling */
-h1.special-page {
-  font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #ffffff;
+.company-info h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.company-info p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+/* Features Section */
+.features-section {
+  display: flex;
+  justify-content: center;  /* Center the feature boxes */
+  align-items: center;
+  padding: 60px 20px; /* Adjust padding to make it closer to the About section */
+  background-color: #f8f8f8;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Space between features */
+  z-index: 1;
+  margin-top: -40px; /* Bring the features section closer to the About section */
+}
+
+/* Feature Container */
+.features-section .feature {
+  background-size: cover;
+  background-position: center;
+  width: 350px;  /* Increased width for a larger display */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow to make it pop */
   text-align: center;
+  color: white; /* Text color for better contrast */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Start from below */
+  animation: featurePopIn 1s forwards; /* Animation for popping in */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
   position: relative;
-  z-index: 2;
-  padding: 20px;
-  margin: 0 auto;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  width: fit-content;
-
-  /* Enhanced Text Shadow */
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-
-  /* Subtle Gradient for a Highlighted Effect */
-  background: linear-gradient(45deg, #5787E6, #648fe6);
-  opacity: 0.7;
-  background-clip: padding-box; /* Background within padding area */
-  -webkit-background-clip: padding-box;
-
-  /* Animation */
-  animation: float 3s ease-in-out infinite;
 }
 
-/* Floating Animation */
-@keyframes float {
-  0%, 100% {
-      transform: translateY(0);
+/* Text Styling (Overlay on Images) */
+.features-section .feature h3 {
+  font-size: 1.8em;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Dark shadow for better readability */
+}
+
+.features-section .feature p {
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+
+/* Animation for feature pop-in */
+@keyframes featurePopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(50px); /* Start smaller and below */
   }
-  50% {
-      transform: translateY(-10px);
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0); /* End at full size and normal position */
   }
 }
 
-/* Floating Animation */
-@keyframes float {
-  0%, 100% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(-10px);
-  }
+/* Animation Delay for Staggered Effect */
+.features-section .feature:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.features-section .feature:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.features-section .feature:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+/* Hover Effect (Pop-out when hovered) */
+.features-section .feature:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }

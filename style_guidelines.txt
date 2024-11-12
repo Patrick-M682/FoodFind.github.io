@@ -1,12 +1,19 @@
 Color theme:
-    Black, white and blue (#575AE6)
-    Dark colors for navigation bar
+    Black, white, yellow, red and blue (Main color) (#575AE6)
+    navigation bar color:#575AE6
+    Text color: White if the background is dark, black or dark gray if the background is light
+
+Background:
+    Food pictures
+    Light colors
+
 Typography (Bold, Italic):
-    Italique: Fake reviews and soustitre secondaire
-    Bold: sous titre et nos nom
-What Fonts are we using?
-    Regular text: noto sans
-Logo: FoodFind
+    Italique: Slogan
+    Bold: Titles
+
+What Font are we using?:
+    Poppins sans serif
+    
 Tone: 
     Serious
     Appetizing

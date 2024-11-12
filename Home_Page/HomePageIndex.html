@@ -15,46 +15,70 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="navdiv">
-        <div class="logo"><a href="#">FoodFind</a></div>
+        <div class="logo">
+          <a href="../Home_Page/HomePageIndex.html">FoodFind</a>
+        </div>
         <ul>
           <li><a href="../Home_Page/HomePageIndex.html">Home</a></li>
           <li><a href="../Pricing_Page/Pricing_Page.html">Pricing</a></li>
           <li><a href="../Feauture_Page/Features_Page.html">Features</a></li>
           <li><a href="../About_Me_Page/About_Me_Page.html">About</a></li>
-          <button><a href="#">LogIn</a></button>
-          <button><a href="#">SignUp</a></button>
+          <button><a href="../Log_in_Page/Log_in_Page.html">LogIn</a></button>
+          <button><a href="../SignUp_Page/SignUp_Page.html">SignUp</a></button>
         </ul>
       </div>
     </nav>
 
-    <!-- Background image container with rotating images -->
+    <!-- Full-Screen Background Slideshow Container -->
     <div class="img-eye">
-      <div class="slideshow">
-        <img
-          src="img/fridge2.jpg"
-          alt="Fridge image 1"
-          class="slide active"
-        />
-        <img
-          src="img/food2.jpg"
-          alt="Fridge image 2"
-          class="slide"
-        />
-        <img
-          src="img/food6.jpg"
-          alt="Fridge image 3"
-          class="slide"
-        />
-        <img
-        src="img/food4.jpg"
-        alt="Fridge image 1"
-        class="slide active"
-        />
-      </div>
-      <h1 class="special-page">"From Fridge to Feast"</h1>
-      <!-- Timer bar for image transitions -->
-      <div class="timer-bar"></div>
+      <div class="slide" style="background-image: url('img/fridge2.jpg')"></div>
+      <div class="slide" style="background-image: url('img/food2.jpg')"></div>
+
+      <!-- Animated Title and Slogan -->
+      <h1 class="title">FOODFIND</h1>
+      <h2 class="slogan">- From Fridge to Feast -</h2>
     </div>
+
+    <!-- Company Information Section -->
+    <section class="company-info">
+      <h2>About FoodFind</h2>
+      <p>
+        FoodFind is dedicated to making your culinary journey easier and more
+        enjoyable. Our app helps you turn ingredients you already have into
+        delicious meals, reducing food waste and bringing excitement to your
+        kitchen.
+      </p>
+    </section>
+    <!-- Feature Explanations Section -->
+    <section class="features-section">
+      <div
+        class="feature"
+        style="background-image: url('img/grocery-list.jpg')"
+      >
+        <h3>Grocery List</h3>
+        <p>
+          Our Grocery List feature helps ensure you never miss an essential
+          ingredient. Organize, manage, and update your grocery list in
+          real-time for a streamlined shopping experience.
+        </p>
+      </div>
+      <div class="feature" style="background-image: url('img/delivery.jpg')">
+        <h3>Deliveries</h3>
+        <p>
+          With our efficient delivery service, you get your groceries right when
+          you need them. It’s all about convenience, speed, and reliability to
+          help simplify your daily life.
+        </p>
+      </div>
+      <div class="feature" style="background-image: url('img/recipes.jpg')">
+        <h3>Recipes</h3>
+        <p>
+          Discover a world of culinary possibilities with our Recipes feature.
+          From quick meals to gourmet dishes, our recipes inspire creativity,
+          making it easy to turn your ingredients into amazing meals.
+        </p>
+      </div>
+    </section>
 
     <script src="../Home_Page/HomePage.js"></script>
   </body>

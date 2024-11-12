@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #34c1b3, #5cb9e4);
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .login-box {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 50px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    color: #333;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #FF6347;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #FFA07A;
+    outline: none;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: #FF6347;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:valid + label {
+    top: -25px;
+    font-size: 0.8em;
+    color: #FF6347;
+  }
+  
+  button {
+    background: #FF6347;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #FF4500;
+  }
+  
+  .register {
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+  
+  .register a {
+    color: #FF6347;
+    text-decoration: none;
+  }
+  
+  .register a:hover {
+    color: #FF4500;
+  }
+  
+  .floating-icon {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.5;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6347; /* Tomato color */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #ff4500; /* Darker tomato color */
