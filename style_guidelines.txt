@@ -1,19 +1,132 @@
-Color theme:
-    Black, white, yellow, red and blue (Main color) (#575AE6)
-    navigation bar color:#575AE6
-    Text color: White if the background is dark, black or dark gray if the background is light
+Navigation bar: 
+    Color theme:
+        Black, white, and blue (#575AE6)
+        Text color: White if the background is dark, black or dark gray if the background is light
+        titles can be in black or yellow
 
-Background:
-    Food pictures
-    Light colors
-
-Typography (Bold, Italic):
-    Italique: Slogan
-    Bold: Titles
-
-What Font are we using?:
-    Poppins sans serif
+    Background:
+        color:#575AE6
+        Signup/Login: black
     
-Tone: 
-    Serious
-    Appetizing
+    Typography (Bold, Italic):
+        Everything
+        Logo is bigger then the other Text
+
+    What Font are we using?:
+        Poppins sans serif
+
+Home page: 
+    Color theme:
+        Black, white, yellow(Accents), and blue (Main color)
+        Text color: White if the background is dark, black or dark gray if the background is light
+        titles can be in black or yellow
+
+    Background:
+        Food pictures
+        Grocery
+        Shopping
+        Deliveries
+        Recipe or Groceries list
+        People cooking
+        White
+        Blue
+
+    Typography (Bold, Italic):
+        Italique: Slogan
+        Bold: Titles
+
+    What Font are we using?:
+        Poppins sans serif
+        
+    Tone: 
+        Serious
+        Appetizing
+        Informing
+
+Features page:
+    Color theme:
+        Black, white, green, and blue (Main color)
+        Text color: gray
+        Titles: Black
+        Button text: white
+
+    Background:
+       Light blue
+       White
+       button: green
+       Images relevant to the subject at hand
+
+    Typography (Bold, Italic):
+        Bold: Titles
+
+    What Font are we using?:
+        Poppins sans serif
+        
+    Tone: 
+        Informing
+        Casual
+    
+About page:
+    Color theme:
+        Black, white, green, and blue (Main color)
+        Text color: Black or gray
+        Titles: Black or gray
+
+    Background:
+       Light blue
+       White
+       Images of us
+
+    Typography (Bold, Italic):
+        Bold: Titles
+
+    What Font are we using?:
+        Poppins sans serif
+        
+    Tone: 
+        Informing
+        Casual
+
+Login page:
+    Color theme:
+        Turquoise, white, orange, gray
+        Text color: Orange or white
+        Titles: Orange or white
+
+    Background:
+        #34c1b3
+        #5cb9e4
+        White
+        Little emojis
+        button background: orange
+
+    Typography (Bold, Italic):
+        Bold: Titles
+
+    What Font are we using?:
+        Poppins sans serif
+        
+    Tone: 
+        Casual
+
+Sign up:
+    Color theme:
+        Turquoise, white, orange, gray
+        Text color: Orange or white
+        Titles: Orange or white
+
+    Background:
+        #28c6ee
+        #06b6fb
+        White
+        Little emojis
+        button background: orange
+
+    Typography (Bold, Italic):
+        Bold: Titles
+
+    What Font are we using?:
+        Poppins sans serif
+        
+    Tone: 
+        Casual
