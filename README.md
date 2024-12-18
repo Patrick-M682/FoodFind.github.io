@@ -1,4 +1,4 @@
-# FoodFind.github.io
+# FoodFind
 <<<<<<< HEAD
 Team Name : FoodFind
 Product name: FoodFind
